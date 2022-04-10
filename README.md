@@ -1,1 +1,0 @@
-# tomaskubovcik.github.io
