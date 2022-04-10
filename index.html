@@ -1,0 +1,113 @@
+<!--
+Inthedifferentspaces HTML
+Version: 1.0
+
+Copyright © 2022 Tomas Kubovcik. All Rights Reserved
+-->
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Indifferentspaces</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- <link rel="icon" type="image/x-icon" href="exhibition.png"> -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="homecontainer">
+    <div class="titlecontainer">
+      <img src="img/Untitled-4.png" alt="titlelogo">
+    </div>
+    <div class="infodatecontainer">
+      <img src="img/infodate1.jpg" alt="infodate">
+    </div>
+    <div class="imagescontainer">
+      <img name="slide" id="jsstyleimg" alt="posterimages">
+    </div>
+  </div>
+
+  <div class="infocontainer">
+    <div class="table0">
+      <ul>
+        <li>Alex Ashcroft</li>
+        <li>Chloe Halford</li>
+        <li>Conlan Beech</li>
+        <li>James</li>
+        <li>Max Finley</li>
+        <li>Mia Blake</li>
+        <li>Tiago Valeiro</li>
+        <li>Tomas Kubovcik</li>
+      </ul>
+    </div>
+
+    <div class="table1">
+      <ul>
+        <li><a href="https://www.instagram.com/alex_ashcroft_/" target="_blank" rel="noopener noreferrer">@alex_ashcroft_</a></li>
+        <li><a href="https://www.instagram.com/chloehalfordphotography/" target="_blank" rel="noopener noreferrer">@chloehalfordphotography</a></li>
+        <li><a href="https://www.instagram.com/conlanbeechphotography/" target="_blank" rel="noopener noreferrer">@conlanbeechphotography</a></li>
+        <li><a href="https://www.instagram.com/___james19/" target="_blank" rel="noopener noreferrer">@___james19</a></li>
+        <li><a href="https://www.instagram.com/fin.maxted/" target="_blank" rel="noopener noreferrer">@fin.maxted</a></li>
+        <li><a href="https://www.instagram.com/miablake_photography_/" target="_blank" rel="noopener noreferrer">@miablake_photography_</a></li>
+        <li><a href="https://www.instagram.com/dentesdementiroso/" target="_blank" rel="noopener noreferrer">@dentesdementiroso</a></li>
+        <li><a href="https://www.instagram.com/tomas.kubovcik/" target="_blank" rel="noopener noreferrer">@tomas.kubovcik</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footnoteinfo">
+    Copyright © 2022 Tomas Kubovcik. All Rights Reserved
+  </div>
+  <script>
+    var i = 0;
+    var images = [];
+    var time = 1000;
+
+    //Image list
+    images[0] = 'img/iw0.jpg';
+    images[1] = 'img/iw1.jpg';
+    images[2] = 'img/iw2.jpg';
+    images[3] = 'img/iw3.jpg';
+    images[4] = 'img/iw4.jpg';
+    images[5] = 'img/iw5.jpg';
+    images[6] = 'img/iw6.jpg';
+    images[7] = 'img/iw7.jpg';
+    images[8] = 'img/iw8.jpg';
+    images[9] = 'img/iw9.jpg';
+
+    //Change Images
+    function changeImg() {
+      document.slide.src = images[i];
+
+      if (i < images.length - 1) {
+        i++;
+      }
+      else {
+        i = 0;
+      }
+
+      setTimeout("changeImg()", time);
+    }
+
+    //function start when website is on
+    window.onload = changeImg();
+
+  </script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
