@@ -1,6 +1,6 @@
 /*
 Inthedifferentspaces CSS
-Version: 1.0
+Version: 1.1
 
 Copyright © Tomas Kubovcik. All Rights Reserved
 */
@@ -9,8 +9,9 @@ Copyright © Tomas Kubovcik. All Rights Reserved
   margin: 0;
   padding: 0;
   background-color: white;
-  font-family: "Gill Sans Nova";
+  font-family: 'Roboto', sans-serif;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -36,6 +37,10 @@ ul {
   height: 100%;
 }
 
+.indifferentspaces {
+  display: none;
+}
+
 .infodatecontainer {
   position: absolute;
   height: 325px;
@@ -56,10 +61,44 @@ ul {
   overflow: hidden;
 }
 
+.infostatement {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 25vh;
+  margin-top: 40vh;
+}
+
+.infostatement h2 {
+  margin-bottom: 10vh;
+  font-size: 40px;
+}
+
+.infostatement p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  width: 60vw;
+}
+.h2contacts {
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+  width: 100vw;
+  margin-top: 40vh;
+}
+
+.h2contacts h2{
+  font-size: 40px;
+}
+
 .infocontainer {
   display: flex;
   flex-direction: row;
-  height: 95vh;
+  height: 70vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -80,7 +119,6 @@ ul {
 }
 
 li {
-  font-family: "Gill Sans Nova";
   font-weight: normal;
   font-size: 25px;
 }
@@ -95,9 +133,105 @@ a {
   margin: 0;
   padding-top: 2.5vh;
   background-color: grey;
-  font-family: Roboto;
   font-size: 15px;
   color: white;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .homecontainer {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
 
+  .titlecontainer img{
+    display: none;
+  }
+
+  .infodatecontainer {
+    position: absolute;
+    height: 325px;
+    width: 225px;
+    left: calc(50vw - 112px);
+    bottom: 0;
+    z-index: 1;
+  }
+  .imagescontainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  .indifferentspaces {
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    width: 100vw;
+    margin: 8vh 0 8vh 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .indifferentspaces h1 {
+    color: grey;
+    font-size: 5vh;
+  }
+
+  .infostatement {
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infostatement h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .infostatement p {
+    display: inline-block;
+    width: 85vw;
+    margin-top: 10px;
+    font-size: 2vh;
+  }
+
+  .h2contacts {
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    width: 100vw;
+    margin-top: 20vh;
+  }
+
+  .h2contacts h2 {
+    font-size: 20px;
+  }
+
+  .infocontainer {
+    height: 50vh;
+    margin: 4vh 0 10vh 0;
+  }
+
+  .table0 ul li {
+    padding: 10px 0 10px 0;
+  }
+
+  .table1 ul li {
+    padding: 10px 0 10px 10px;
+  }
+
+  li {
+    font-size: 2.5vh;
+  }
+
+  .footnoteinfo {
+    font-size: 2vh;
+  }
+
+}
